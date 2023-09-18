@@ -19,7 +19,8 @@ export default {
         'cm-purple': '#CE82FF',
         'cm-brown': '#DC8F47',
         'cm-black': '#131F24',
-        'cm-border-gray': 'rgb(50, 53, 71)'
+        'cm-border-gray': 'rgb(50, 63, 71)',
+        'cm-dark-blue': '#4255FF'
       }
     }
   },
