@@ -1,0 +1,344 @@
+[
+  {
+    "id": 1,
+    "originalText": "Je suis heureux",
+    "answers": ["I am happy", "I am sad", "I am angry", "I am excited"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 2,
+    "originalText": "Elle mange une pomme",
+    "answers": [
+      "She eats an apple",
+      "He eats an apple",
+      "She eats a banana",
+      "He eats a banana"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 3,
+    "originalText": "Nous aimons voyager",
+    "answers": [
+      "We like to travel",
+      "We like to eat",
+      "We like to sleep",
+      "We like to read"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 4,
+    "originalText": "Il fait beau temps",
+    "answers": [
+      "The weather is nice",
+      "The weather is bad",
+      "The weather is rainy",
+      "The weather is cold"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 5,
+    "originalText": "Je lis un livre",
+    "answers": [
+      "I am reading a book",
+      "I am writing a book",
+      "I am drawing a book",
+      "I am eating a book"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 6,
+    "originalText": "Elle chante une chanson",
+    "answers": [
+      "She sings a song",
+      "He sings a song",
+      "She writes a song",
+      "He writes a song"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 7,
+    "originalText": "Je bois de l'eau",
+    "answers": [
+      "I am drinking water",
+      "I am drinking juice",
+      "I am drinking milk",
+      "I am drinking tea"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 8,
+    "originalText": "Il danse bien",
+    "answers": [
+      "He dances well",
+      "She dances well",
+      "He dances badly",
+      "She dances badly"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 9,
+    "originalText": "Elle regarde la télévision",
+    "answers": [
+      "She is watching television",
+      "He is watching television",
+      "She is reading a book",
+      "He is reading a book"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 10,
+    "originalText": "Nous parlons français",
+    "answers": [
+      "We speak French",
+      "We speak English",
+      "We speak Spanish",
+      "We speak German"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 11,
+    "originalText": "Il aime le chocolat",
+    "answers": [
+      "He likes chocolate",
+      "She likes chocolate",
+      "He likes cake",
+      "She likes cake"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 12,
+    "originalText": "Elle court vite",
+    "answers": [
+      "She runs fast",
+      "He runs fast",
+      "She runs slow",
+      "He runs slow"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 13,
+    "originalText": "Nous écoutons de la musique",
+    "answers": [
+      "We are listening to music",
+      "We are reading a book",
+      "We are watching a movie",
+      "We are cooking"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 14,
+    "originalText": "Il travaille dur",
+    "answers": [
+      "He works hard",
+      "She works hard",
+      "He works easy",
+      "She works easy"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 15,
+    "originalText": "Je dessine un chat",
+    "answers": [
+      "I am drawing a cat",
+      "I am drawing a dog",
+      "I am drawing a bird",
+      "I am drawing a fish"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 16,
+    "originalText": "Elle parle lentement",
+    "answers": [
+      "She speaks slowly",
+      "He speaks slowly",
+      "She speaks fast",
+      "He speaks fast"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 17,
+    "originalText": "Il saute haut",
+    "answers": [
+      "He jumps high",
+      "She jumps high",
+      "He jumps low",
+      "She jumps low"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 18,
+    "originalText": "Nous nageons ensemble",
+    "answers": [
+      "We swim together",
+      "We swim alone",
+      "We run together",
+      "We run alone"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 19,
+    "originalText": "Il dort profondément",
+    "answers": [
+      "He sleeps deeply",
+      "She sleeps deeply",
+      "He sleeps lightly",
+      "She sleeps lightly"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 20,
+    "originalText": "Elle porte une robe",
+    "answers": [
+      "She is wearing a dress",
+      "He is wearing a dress",
+      "She is wearing a shirt",
+      "He is wearing a shirt"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 21,
+    "originalText": "Je grimpe rapidement",
+    "answers": [
+      "I climb quickly",
+      "I climb slowly",
+      "I climb high",
+      "I climb low"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 22,
+    "originalText": "Il vole loin",
+    "answers": [
+      "He flies far",
+      "She flies far",
+      "He flies near",
+      "She flies near"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 26,
+    "originalText": "Il aime jouer",
+    "answers": [
+      "He likes to play",
+      "She likes to play",
+      "He likes to eat",
+      "She likes to eat"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 27,
+    "originalText": "Elle écrit une lettre",
+    "answers": [
+      "She writes a letter",
+      "He writes a letter",
+      "She writes an email",
+      "He writes an email"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 28,
+    "originalText": "Il regarde par la fenêtre",
+    "answers": [
+      "He is looking out the window",
+      "She is looking out the window",
+      "He is looking in the mirror",
+      "She is looking in the mirror"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 29,
+    "originalText": "Nous sommes en retard",
+    "answers": ["We are late", "We are early", "We are on time", "We are lost"],
+    "correctAnswer": 0
+  },
+  {
+    "id": 30,
+    "originalText": "Elle habite près de l'école",
+    "answers": [
+      "She lives near the school",
+      "He lives near the school",
+      "She lives far from the school",
+      "He lives far from the school"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 31,
+    "originalText": "Je conduis la voiture",
+    "answers": [
+      "I am driving the car",
+      "I am cleaning the car",
+      "I am selling the car",
+      "I am fixing the car"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 32,
+    "originalText": "Elle prépare le dîner",
+    "answers": [
+      "She is preparing dinner",
+      "He is preparing dinner",
+      "She is preparing breakfast",
+      "He is preparing breakfast"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 33,
+    "originalText": "Il regarde un film",
+    "answers": [
+      "He is watching a movie",
+      "She is watching a movie",
+      "He is reading a book",
+      "She is reading a book"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 34,
+    "originalText": "Elle saute à la corde",
+    "answers": [
+      "She is jumping rope",
+      "He is jumping rope",
+      "She is playing soccer",
+      "He is playing soccer"
+    ],
+    "correctAnswer": 0
+  },
+  {
+    "id": 35,
+    "originalText": "Nous étudions ensemble",
+    "answers": [
+      "We study together",
+      "We study alone",
+      "We work together",
+      "We work alone"
+    ],
+    "correctAnswer": 0
+  }
+]
