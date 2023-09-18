@@ -1,65 +1,92 @@
 import { ReactNode } from 'react'
 
 const defaultStyles =
-  'border-2 border-transparent font-bold rounded-xl hover:brightness-75 transition-all delay-75 hover:scale-105 disabled:brightness-[65%] shadow-xl dark:shadow-none'
+  'border-2 border-b-4 sm:w-max w-full px-10 py-2 border-transparent font-bold rounded-xl hover:brightness-105 transition-all delay-75 hover:scale-105 disabled:brightness-[65%] text-sm'
 
 interface ColorInput {
   children: ReactNode
   disabled?: boolean
+  onClick: () => void
   color: 'green' | 'blue' | 'white' | 'red'
 }
 
 interface Btn {
   children: ReactNode
   disabled: boolean
+  onClick: () => void
 }
 
-export function PrimaryBtn({ children, color, disabled = false }: ColorInput) {
+export function PrimaryBtn({
+  children,
+  color,
+  disabled = false,
+  onClick
+}: ColorInput) {
   const btnOptions = {
-    green: <GreenBtn disabled={disabled}>{children}</GreenBtn>,
-    blue: <BlueBtn disabled={disabled}>{children}</BlueBtn>,
-    white: <WhiteBtn disabled={disabled}>{children}</WhiteBtn>,
-    red: <RedBtn disabled={disabled}>{children}</RedBtn>
+    green: (
+      <GreenBtn disabled={disabled} onClick={onClick}>
+        {children}
+      </GreenBtn>
+    ),
+    blue: (
+      <BlueBtn disabled={disabled} onClick={onClick}>
+        {children}
+      </BlueBtn>
+    ),
+    white: (
+      <WhiteBtn disabled={disabled} onClick={onClick}>
+        {children}
+      </WhiteBtn>
+    ),
+    red: (
+      <RedBtn disabled={disabled} onClick={onClick}>
+        {children}
+      </RedBtn>
+    )
   }
 
   return btnOptions[color]
 }
 
-function GreenBtn({ children, disabled }: Btn) {
+function GreenBtn({ children, disabled, onClick }: Btn) {
   return (
     <button
-      className={`${defaultStyles} bg-cm-green w-full py-3 text-cm-black`}
+      className={`${defaultStyles} bg-cm-green border-b-cm-dark-green text-cm-white dark:text-cm-black`}
       disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </button>
   )
 }
-function BlueBtn({ children, disabled }: Btn) {
+function BlueBtn({ children, disabled, onClick }: Btn) {
   return (
     <button
-      className={`${defaultStyles} bg-cm-dark-blue  w-full py-3 text-cm-white`}
+      className={`${defaultStyles} bg-cm-dark-blue text-cm-white`}
       disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </button>
   )
 }
-function WhiteBtn({ children, disabled }: Btn) {
+function WhiteBtn({ children, disabled, onClick }: Btn) {
   return (
     <button
-      className={`${defaultStyles} bg-cm-gray text-cm-white dark:bg-white w-full py-3 dark:text-cm-black dark:hover:bg-cm-white`}
+      className={`${defaultStyles} bg-cm-gray text-cm-white dark:bg-white dark:text-cm-black dark:hover:bg-cm-white`}
       disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </button>
   )
 }
-function RedBtn({ children, disabled }: Btn) {
+function RedBtn({ children, disabled, onClick }: Btn) {
   return (
     <button
-      className={`${defaultStyles} bg-cm-red  w-full py-3 text-cm-white`}
+      className={`${defaultStyles} bg-cm-red text-cm-white`}
       disabled={disabled}
+      onClick={onClick}
     >
       {children}
     </button>
