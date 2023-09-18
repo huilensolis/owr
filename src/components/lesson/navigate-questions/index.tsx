@@ -7,7 +7,7 @@ interface QuestionInputInterface {
 
 export function NavigateQuestions({ question }: QuestionInputInterface) {
   const handleSkipQuestionClick = () => {
-    console.log('skip')
+    console.log('skip', question)
   }
 
   const handleNextQuestionClick = () => {

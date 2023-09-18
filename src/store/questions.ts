@@ -7,7 +7,7 @@ interface MyZustandState {
   fetchQuestions: (limit: number) => void
 }
 
-export const useQuestionStore = create<MyZustandState>((set, get) => {
+export const useQuestionStore = create<MyZustandState>((set) => {
   return {
     questions: [],
     currentQuestion: 0,
