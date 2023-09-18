@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { type Quest } from '../interfaces/quest.interface'
-import questionsJson from '../../public/data.json'
+import questionsJson from '../assets/data.json'
 interface MyZustandState {
   questions: Quest[]
   currentQuestion: number

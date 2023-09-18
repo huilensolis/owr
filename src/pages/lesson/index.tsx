@@ -15,7 +15,7 @@ export function Lesson() {
             <Question text={QuestionInfo.originalText} />
             <AnswersList question={QuestionInfo} />
           </section>
-          <section className="w-full h-max flex justify-center items-end sm:py-11 py-5">
+          <section className="max-w-lg w-full h-max flex justify-center items-end sm:py-11 py-5">
             <NavigateQuestions question={QuestionInfo} />
           </section>
         </section>
