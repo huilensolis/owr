@@ -3,8 +3,8 @@ import { BrowserRouter, useRoutes } from 'react-router-dom'
 import { Home } from './pages/home'
 import { Error } from './pages/error'
 import { Learn } from './pages/learn'
-import { Lesson } from './pages/lesson'
-import { Resume } from './pages/resume'
+import { LessonPage } from './pages/lesson'
+import { PageResume } from './pages/resume'
 import { NotFound } from './pages/not-found'
 import { NavItem } from './interfaces/nav-item.interface'
 
@@ -25,12 +25,12 @@ const AppRoutes = () => {
     },
     {
       path: '/lesson',
-      element: <Lesson />,
+      element: <LessonPage />,
       errorElement: <Error />
     },
     {
       path: '/resume',
-      element: <Resume />,
+      element: <PageResume />,
       errorElement: <Error />
     },
     {

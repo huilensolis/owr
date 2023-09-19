@@ -1,21 +1,35 @@
-import { Quest } from '../../../interfaces/quest.interface'
-import { SecundaryBtn } from '../../buttons/secondary/index'
 import { PrimaryBtn } from '../../buttons/primary/index'
-interface QuestionInputInterface {
-  question: Quest
-}
+import { useQuestionStore } from '../../../store/questions'
+import { useNavigate } from 'react-router-dom'
 
-export function NavigateQuestions({ question }: QuestionInputInterface) {
-  const handleSkipQuestionClick = () => {
-    console.log('skip', question)
+export function NavigateQuestions() {
+  const globalState = useQuestionStore((mystate) => mystate)
+  const navigate = useNavigate()
+
+  function JumpIntoNextQuestion() {
+    const questions = globalState.questions
+    const currentIndexOnQuestions = globalState.currentQuestion
+
+    if (questions[currentIndexOnQuestions + 1] === undefined) {
+      console.log('navigating')
+      return navigate('/resume')
+    }
+    console.log(questions[currentIndexOnQuestions])
+    globalState.jumpNextQuestion()
   }
 
   const handleNextQuestionClick = () => {
-    console.log('next')
+    const currentQuestion = globalState.questions[globalState.currentQuestion]
+    const isAnswerCorrect = currentQuestion.isCorrectUserAnswer
+    if (isAnswerCorrect === false) {
+      globalState.addWrongAnswersToResume(1)
+      return JumpIntoNextQuestion()
+    }
+    globalState.addCorrectAnswersToResume(1)
+    JumpIntoNextQuestion()
   }
   return (
-    <section className="w-full flex justify-between items-center gap-2 flex-col sm:flex-row">
-      <SecundaryBtn onClick={handleSkipQuestionClick}>SKIP</SecundaryBtn>
+    <section className="w-full flex justify-end items-center">
       <PrimaryBtn color="green" onClick={handleNextQuestionClick}>
         NEXT
       </PrimaryBtn>

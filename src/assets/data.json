@@ -2,52 +2,54 @@
   {
     "id": 1,
     "originalText": "Je suis heureux",
-    "answers": ["I am happy", "I am sad", "I am angry", "I am excited"],
-    "correctAnswer": 0
+    "answers": ["I am sad", "I am angry", "I am happy", "I am excited"],
+    "correctAnswer": 2
   },
   {
     "id": 2,
     "originalText": "Elle mange une pomme",
     "answers": [
-      "She eats an apple",
       "He eats an apple",
       "She eats a banana",
+      "She eats an apple",
+
       "He eats a banana"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 3,
     "originalText": "Nous aimons voyager",
     "answers": [
-      "We like to travel",
       "We like to eat",
       "We like to sleep",
-      "We like to read"
+      "We like to read",
+      "We like to travel"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 4,
     "originalText": "Il fait beau temps",
     "answers": [
-      "The weather is nice",
       "The weather is bad",
+      "The weather is nice",
+
       "The weather is rainy",
       "The weather is cold"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": 5,
     "originalText": "Je lis un livre",
     "answers": [
-      "I am reading a book",
       "I am writing a book",
       "I am drawing a book",
-      "I am eating a book"
+      "I am eating a book",
+      "I am reading a book"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 6,
@@ -64,12 +66,13 @@
     "id": 7,
     "originalText": "Je bois de l'eau",
     "answers": [
-      "I am drinking water",
       "I am drinking juice",
+      "I am drinking water",
+
       "I am drinking milk",
       "I am drinking tea"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": 8,
@@ -86,12 +89,12 @@
     "id": 9,
     "originalText": "Elle regarde la télévision",
     "answers": [
-      "She is watching television",
       "He is watching television",
       "She is reading a book",
-      "He is reading a book"
+      "He is reading a book",
+      "She is watching television"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 10,
@@ -108,45 +111,45 @@
     "id": 11,
     "originalText": "Il aime le chocolat",
     "answers": [
-      "He likes chocolate",
       "She likes chocolate",
       "He likes cake",
+      "He likes chocolate",
       "She likes cake"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 12,
     "originalText": "Elle court vite",
     "answers": [
-      "She runs fast",
       "He runs fast",
+      "She runs fast",
       "She runs slow",
       "He runs slow"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": 13,
     "originalText": "Nous écoutons de la musique",
     "answers": [
-      "We are listening to music",
       "We are reading a book",
       "We are watching a movie",
-      "We are cooking"
+      "We are cooking",
+      "We are listening to music"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 14,
     "originalText": "Il travaille dur",
     "answers": [
-      "He works hard",
       "She works hard",
+      "He works hard",
       "He works easy",
       "She works easy"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": 15,
@@ -163,45 +166,45 @@
     "id": 16,
     "originalText": "Elle parle lentement",
     "answers": [
-      "She speaks slowly",
       "He speaks slowly",
+      "She speaks slowly",
       "She speaks fast",
       "He speaks fast"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": 17,
     "originalText": "Il saute haut",
     "answers": [
-      "He jumps high",
       "She jumps high",
       "He jumps low",
+      "He jumps high",
       "She jumps low"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 18,
     "originalText": "Nous nageons ensemble",
     "answers": [
-      "We swim together",
       "We swim alone",
       "We run together",
+      "We swim together",
       "We run alone"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 19,
     "originalText": "Il dort profondément",
     "answers": [
-      "He sleeps deeply",
       "She sleeps deeply",
       "He sleeps lightly",
+      "He sleeps deeply",
       "She sleeps lightly"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 20,
@@ -218,23 +221,23 @@
     "id": 21,
     "originalText": "Je grimpe rapidement",
     "answers": [
-      "I climb quickly",
       "I climb slowly",
       "I climb high",
-      "I climb low"
+      "I climb low",
+      "I climb quickly"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 22,
     "originalText": "Il vole loin",
     "answers": [
-      "He flies far",
       "She flies far",
       "He flies near",
-      "She flies near"
+      "She flies near",
+      "He flies far"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 26,
@@ -251,23 +254,23 @@
     "id": 27,
     "originalText": "Elle écrit une lettre",
     "answers": [
-      "She writes a letter",
       "He writes a letter",
+      "She writes a letter",
       "She writes an email",
       "He writes an email"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": 28,
     "originalText": "Il regarde par la fenêtre",
     "answers": [
-      "He is looking out the window",
       "She is looking out the window",
+      "He is looking out the window",
       "He is looking in the mirror",
       "She is looking in the mirror"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": 29,
@@ -279,12 +282,12 @@
     "id": 30,
     "originalText": "Elle habite près de l'école",
     "answers": [
-      "She lives near the school",
       "He lives near the school",
       "She lives far from the school",
+      "She lives near the school",
       "He lives far from the school"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 31,
@@ -301,34 +304,34 @@
     "id": 32,
     "originalText": "Elle prépare le dîner",
     "answers": [
-      "She is preparing dinner",
       "He is preparing dinner",
+      "She is preparing dinner",
       "She is preparing breakfast",
       "He is preparing breakfast"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 1
   },
   {
     "id": 33,
     "originalText": "Il regarde un film",
     "answers": [
-      "He is watching a movie",
       "She is watching a movie",
       "He is reading a book",
-      "She is reading a book"
+      "She is reading a book",
+      "He is watching a movie"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 3
   },
   {
     "id": 34,
     "originalText": "Elle saute à la corde",
     "answers": [
-      "She is jumping rope",
       "He is jumping rope",
       "She is playing soccer",
+      "She is jumping rope",
       "He is playing soccer"
     ],
-    "correctAnswer": 0
+    "correctAnswer": 2
   },
   {
     "id": 35,
