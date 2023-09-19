@@ -6,7 +6,7 @@ export function LessonPage() {
   const questionIndex = useQuestionStore((myState) => myState.currentQuestion)
   const questionInfo = questionList[questionIndex]
   return (
-    <main className="w-full h-[calc(100dvh-87px)]">
+    <main className="w-full h-[calc(100dvh-87px)] flex justify-center items-center">
       {questionInfo !== undefined && <Lesson questionInfo={questionInfo} />}
       {questionInfo === undefined && (
         <span className="text-cm-red">

@@ -33,7 +33,15 @@ export const useQuestionStore = create<MyZustandState>((set, get) => {
         .sort(() => Math.random() - 0.5)
         .slice(0, limit)
 
-      set({ questions, resume: { ...get().resume, totalQuestions: limit } })
+      set({
+        questions,
+        resume: {
+          correctAnswers: 0,
+          totalQuestions: limit,
+          wrongAnswers: 0
+        },
+        currentQuestion: 0
+      })
     },
     selectAnwer(questionId: number, answerIndex: number) {
       const { questions } = get()

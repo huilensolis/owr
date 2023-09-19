@@ -1,6 +1,6 @@
 export function Question({ text }: { text: string }) {
   return (
-    <article className="w-full max-w-lg h-max flex justify-center items-start flex-col gap-5">
+    <article className="w-full w-full h-max flex justify-center items-start flex-col gap-5">
       <h2 className="font-bold text-xl text-cm-text-gray dark:text-cm-white">
         What does the sentence mean?
       </h2>

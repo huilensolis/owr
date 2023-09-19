@@ -20,15 +20,15 @@ export function AnswersList({ question }: questionInfoInput) {
   const styleWhenSelected = 'border-cm-blue'
 
   return (
-    <ul className="w-full max-w-lg flex flex-col gap-2 justify-center items-center">
+    <ul className="w-full flex flex-col gap-2 justify-center items-center">
       {answerOptions.map((answer, index) => (
         <li key={index} className="w-full flex justify-center items-center">
           <button
             className={`${
               selectedAnwer === index
                 ? styleWhenSelected
-                : 'border-cm-light-gray dark:border-cm-gray'
-            }  w-full h-max px-5 py-3 text-sm bg-transparent border-2 border-b-4  rounded-xl text-cm-text-gray dark:text-cm-white flex justify-center items-center text-center hover:bg-cm-dark-white dark:hover:bg-[#202F36] transition-all delay-[0.3]`}
+                : 'border-slate-300 dark:border-slate-700'
+            }  w-full h-max px-5 py-3 text-sm font-semibold bg-transparent border-2 border-b-4  rounded-xl text-cm-text-gray dark:text-cm-white flex justify-center items-center text-center hover:bg-cm-dark-white dark:hover:bg-[#202F36] transition-all delay-[0.3]`}
             onClick={() => handleClick(index)}
           >
             {answer}
