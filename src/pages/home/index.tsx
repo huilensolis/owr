@@ -11,11 +11,11 @@ export function Home() {
   }
 
   return (
-    <main className="h-full min-h-[calc(100vh-87px)] w-full flex items-center justify-center flex-col gap-3">
+    <main className="h-full min-h-[calc(100vh-87px)] w-full flex items-center justify-center flex-col gap-2">
       <h1 className="text-5xl font-bold text-cm-black dark:text-cm-white">
         Owr
       </h1>
-      <sub className="text-cm-black dark:text-cm-white text-xl">
+      <sub className="text-cm-black dark:text-cm-white text-xl mb-3">
         Learn French with Owr
       </sub>
       <PrimaryBtn color="green" onClick={handleClick}>

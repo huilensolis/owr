@@ -1,19 +1,19 @@
 import { ReactNode } from 'react'
 
 const defaultStyles =
-  'border-2 border-b-4 sm:w-max w-full px-10 py-2 border-transparent font-bold rounded-xl hover:brightness-105 transition-all delay-75 hover:scale-105 disabled:brightness-[65%] text-sm'
+  'border-2 border-b-8 sm:w-max w-full px-10 py-2 border-transparent font-bold rounded-xl hover:brightness-105 transition-all delay-75 disabled:brightness-[65%] text-sm'
 
 interface ColorInput {
   children: ReactNode
   disabled?: boolean
-  onClick: () => void
+  onClick?: () => void
   color: 'green' | 'blue' | 'white' | 'red'
 }
 
 interface Btn {
   children: ReactNode
   disabled: boolean
-  onClick: () => void
+  onClick?: () => void
 }
 
 export function PrimaryBtn({
@@ -51,7 +51,7 @@ export function PrimaryBtn({
 function GreenBtn({ children, disabled, onClick }: Btn) {
   return (
     <button
-      className={`${defaultStyles} bg-cm-green border-b-cm-dark-green text-cm-white dark:text-cm-black`}
+      className={`${defaultStyles} bg-cm-green border-cm-dark-green text-cm-white dark:text-cm-black`}
       disabled={disabled}
       onClick={onClick}
     >
@@ -73,7 +73,7 @@ function BlueBtn({ children, disabled, onClick }: Btn) {
 function WhiteBtn({ children, disabled, onClick }: Btn) {
   return (
     <button
-      className={`${defaultStyles} bg-cm-gray text-cm-white dark:bg-white dark:text-cm-black dark:hover:bg-cm-white`}
+      className={`${defaultStyles} bg-cm-gray border-2 border-b-8 border-cm-dark-white dark:border-cm-light-gray text-cm-text-gray dark:bg-white dark:text-cm-black dark:hover:bg-cm-white`}
       disabled={disabled}
       onClick={onClick}
     >
