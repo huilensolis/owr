@@ -13,9 +13,9 @@ export function Lesson({ questionInfo }: { questionInfo: Quest }) {
   const actualQuiestion = useQuestionStore((myState) => myState.currentQuestion)
 
   return (
-    <section className="h-full max-w-xl w-full flex flex-col justify-between items-center gap-20">
+    <section className="h-full max-w-xl w-full flex flex-col justify-between items-center">
       <section className="w-full h-full flex justify-center items-center gap-5 flex-col">
-        <section className="w-full h-full flex gap-2 justify-between items-center">
+        <section className="w-full h-8 flex gap-2 justify-between items-center">
           <Link to="/" className="h-8">
             <svg
               xmlns="http://www.w3.org/2000/svg"
