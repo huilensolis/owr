@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
 const defaultStyles =
-  'border-2 border-b-8 sm:w-max w-full px-10 py-2 border-transparent font-bold rounded-xl hover:brightness-105 transition-all delay-75 disabled:brightness-[65%] text-sm'
+  'border-2 border-b-8 sm:w-max w-full px-10 py-2 font-bold rounded-xl hover:brightness-105 transition-all delay-75 disabled:brightness-[65%] text-sm'
 
 interface ColorInput {
   children: ReactNode
