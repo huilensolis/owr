@@ -34,7 +34,7 @@ export function Lesson({ questionInfo }: { questionInfo: Quest }) {
         <Question text={questionInfo.originalText} />
         <AnswersList question={questionInfo} />
       </section>
-      <section className="w-full h-max flex justify-center items-end sm:py-11 py-5">
+      <section className="w-full h-max flex justify-center items-end sm:pb-11 pb-5">
         <NavigateQuestions />
       </section>
     </section>

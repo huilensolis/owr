@@ -35,7 +35,7 @@ export function PageResume() {
           <Resume text="wrong answers" icon="❎" number={resume.wrongAnswers} />
         </li>
       </ul>
-      <Link to="/" className='w-full flex justify-end pb-5'>
+      <Link to="/" className='w-full flex justify-end sm:pb-11 pb-5'>
         <PrimaryBtn color="green">Go Back Home</PrimaryBtn>
       </Link>
     </main>
