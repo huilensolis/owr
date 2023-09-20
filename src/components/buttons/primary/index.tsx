@@ -51,7 +51,7 @@ export function PrimaryBtn({
 function GreenBtn({ children, disabled, onClick }: Btn) {
   return (
     <button
-      className={`${defaultStyles} bg-cm-green border-cm-dark-green text-cm-white dark:text-cm-black`}
+      className={`${defaultStyles} bg-cm-green border-b-cm-dark-green text-cm-white dark:text-cm-black`}
       disabled={disabled}
       onClick={onClick}
     >
@@ -84,7 +84,7 @@ function WhiteBtn({ children, disabled, onClick }: Btn) {
 function RedBtn({ children, disabled, onClick }: Btn) {
   return (
     <button
-      className={`${defaultStyles} bg-cm-red text-cm-white`}
+      className={`${defaultStyles} bg-cm-red border-cm-dark-red text-cm-white`}
       disabled={disabled}
       onClick={onClick}
     >
