@@ -55,6 +55,8 @@ export const useQuestionStore = create<MyZustandState>()(
               totalQuestions: limit,
               wrongAnswers: 0
             },
+            areAnswersEnabled: true,
+            showResult: false,
             currentQuestion: 0
           })
         },

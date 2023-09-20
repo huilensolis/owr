@@ -63,7 +63,7 @@ export function NavigateQuestions() {
   }
   return (
     <section className="w-full flex flex-col justify-center items-end gap-5">
-      <section className="h-[150px] w-full">
+      <section className="min-h-[150px] h-full w-full overflow-auto">
         {showResult && (
           <AnswerResult isCorrect={isAnswerCorrect}>
             <span
