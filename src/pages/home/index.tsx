@@ -11,7 +11,7 @@ export function Home() {
   }
 
   return (
-    <main className="h-full min-h-[calc(100vh-87px)] w-full flex items-center justify-center flex-col gap-2">
+    <main className="h-[calc(100dvh-87px)] w-full flex items-center justify-center flex-col gap-2">
       <h1 className="text-5xl font-bold text-cm-black dark:text-cm-white">
         Owr
       </h1>
