@@ -47,8 +47,8 @@ const headerItems: NavItem[] = [
     url: '/'
   },
   {
-    title: 'learn',
-    url: '/learn'
+    title: 'resume',
+    url: '/resume'
   }
 ]
 function App() {
