@@ -2,21 +2,20 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { type Quest } from '../interfaces/quest.interface'
 import questionsJson from '../assets/data.json'
-import { type Resume } from '../interfaces/resume'
-import { Question } from '../components/lesson/question'
+import { type Stats } from '../interfaces/stats'
 interface MyZustandState {
   questions: Quest[]
   currentQuestion: number
   fetchQuestions: (limit: number) => void
   selectAnswer: (questionId: number, answerIndex: number) => void
-  resume: Resume
+  stats: Stats
   areAnswersEnabled: boolean
   showResult: boolean
   setShowResult: (setter: boolean) => void
   setAnswersEnabled: (setter: boolean) => void
   jumpNextQuestion: () => void
-  addCorrectAnswersToResume: (points: number) => void
-  addWrongAnswersToResume: (points: number) => void
+  addCorrectAnswersToStats: (points: number) => void
+  addWrongAnswersToStats: (points: number) => void
 }
 
 export const useQuestionStore = create<MyZustandState>()(
@@ -25,9 +24,9 @@ export const useQuestionStore = create<MyZustandState>()(
       return {
         questions: [],
         currentQuestion: 0,
-        resume: {
+        stats: {
           correctAnswers: 0,
-          totalQuestions: Question.length,
+          totalQuestions: 0,
           wrongAnswers: 0
         },
         areAnswersEnabled: true,
@@ -50,9 +49,9 @@ export const useQuestionStore = create<MyZustandState>()(
 
           set({
             questions,
-            resume: {
+            stats: {
               correctAnswers: 0,
-              totalQuestions: limit,
+              totalQuestions: questions.length,
               wrongAnswers: 0
             },
             areAnswersEnabled: true,
@@ -77,20 +76,20 @@ export const useQuestionStore = create<MyZustandState>()(
 
           set({ questions: questionsCopy })
         },
-        // we update the resume object
-        addCorrectAnswersToResume(points: number) {
-          const { resume } = get()
+        // we update the Stats object
+        addCorrectAnswersToStats(points: number) {
+          const { stats } = get()
           set({
-            resume: {
-              ...resume,
-              correctAnswers: resume.correctAnswers + points
+            stats: {
+              ...stats,
+              correctAnswers: stats.correctAnswers + points
             }
           })
         },
-        addWrongAnswersToResume(points: number) {
-          const { resume } = get()
+        addWrongAnswersToStats(points: number) {
+          const { stats } = get()
           set({
-            resume: { ...resume, wrongAnswers: resume.wrongAnswers + points }
+            stats: { ...stats, wrongAnswers: stats.wrongAnswers + points }
           })
         }
       }

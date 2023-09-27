@@ -1,4 +1,4 @@
-export function Resume({
+export function Stat({
   text,
   icon,
   number

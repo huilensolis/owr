@@ -12,11 +12,11 @@ export function NavigateQuestions() {
     (mystate) => mystate.currentQuestion
   )
 
-  const addWrongAnswersToResume = useQuestionStore(
-    (mystate) => mystate.addWrongAnswersToResume
+  const addWrongAnswersToStats = useQuestionStore(
+    (mystate) => mystate.addWrongAnswersToStats
   )
-  const addCorrectAnswersToResume = useQuestionStore(
-    (mystate) => mystate.addCorrectAnswersToResume
+  const addCorrectAnswersToStats = useQuestionStore(
+    (mystate) => mystate.addCorrectAnswersToStats
   )
 
   const setAnswersEnabled = useQuestionStore(
@@ -41,7 +41,7 @@ export function NavigateQuestions() {
     setShowResult(false)
 
     if (questions[currentIndexOnQuestions + 1] === undefined) {
-      return navigate('/resume')
+      return navigate('/Stats')
     }
 
     return jumpNextQuestion()
@@ -53,12 +53,12 @@ export function NavigateQuestions() {
       setAnswersEnabled(false)
     }
 
-    if (isAnswerCorrect) {
-      addWrongAnswersToResume(1)
+    if (!isAnswerCorrect) {
+      addWrongAnswersToStats(1)
       pauseGame()
       return
     }
-    addCorrectAnswersToResume(1)
+    addCorrectAnswersToStats(1)
     pauseGame()
   }
   return (
@@ -102,8 +102,7 @@ export function NavigateQuestions() {
       <PrimaryBtn
         color={showResult ? (isAnswerCorrect ? 'green' : 'red') : 'green'}
         onClick={() =>
-          showResult ? JumpIntoNextQuestion() : handleNextQuestionClick()
-        }
+          showResult ? JumpIntoNextQuestion() : handleNextQuestionClick()}
         disabled={!hadUserSelectedAnOption}
       >
         {showResult ? 'NEXT' : 'VALIDATE'}

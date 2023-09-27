@@ -4,7 +4,7 @@ import { Home } from './pages/home'
 import { Error } from './pages/error'
 import { Learn } from './pages/learn'
 import { LessonPage } from './pages/lesson'
-import { PageResume } from './pages/resume'
+import { PageStats } from './pages/stats'
 import { NotFound } from './pages/not-found'
 import { NavItem } from './interfaces/nav-item.interface'
 
@@ -29,8 +29,8 @@ const AppRoutes = () => {
       errorElement: <Error />
     },
     {
-      path: '/resume',
-      element: <PageResume />,
+      path: '/stats',
+      element: <PageStats />,
       errorElement: <Error />
     },
     {
@@ -47,8 +47,8 @@ const headerItems: NavItem[] = [
     url: '/'
   },
   {
-    title: 'resume',
-    url: '/resume'
+    title: 'stats',
+    url: '/stats'
   }
 ]
 function App() {
